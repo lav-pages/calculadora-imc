@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <meta
+      name="description"
+      content="Calcula tu IMC en segundos con interpretación de categoría según rangos OMS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/css/tom-select.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card">
+        <header class="header">
+          <h1>Calculadora de IMC</h1>
+          <p>Ingresa peso y altura para obtener tu índice de masa corporal.</p>
+        </header>
+
+        <form id="imc-form" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="weight">Peso (kg)</label>
+              <input
+                id="weight"
+                name="weight"
+                type="text"
+                inputmode="decimal"
+                placeholder="Ej. 70"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="height">Altura</label>
+              <input
+                id="height"
+                name="height"
+                type="text"
+                inputmode="decimal"
+                placeholder="Ej. 1.75 o 175"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="height-unit">Unidad altura</label>
+              <select id="height-unit" name="height-unit">
+                <option value="m">Metros (m)</option>
+                <option value="cm">Centímetros (cm)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="submit">Calcular IMC</button>
+            <button type="button" id="clear-btn" class="secondary">Limpiar</button>
+          </div>
+        </form>
+
+        <p id="error-message" class="error" role="alert" aria-live="polite"></p>
+
+        <section class="result" aria-live="polite">
+          <article class="metric">
+            <h2>IMC</h2>
+            <p id="imc-value">0.00</p>
+          </article>
+          <article class="metric">
+            <h2>Categoría</h2>
+            <p id="imc-category">Sin calcular</p>
+          </article>
+        </section>
+
+        <p id="imc-note" class="note">
+          Nota: este resultado es orientativo y no sustituye una evaluación médica.
+        </p>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@2.3.1/dist/js/tom-select.complete.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
