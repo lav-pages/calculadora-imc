@@ -37,6 +37,71 @@
     />
     <meta name="twitter:image" content="https://imc.vittclas.com/og-imc.svg" />
 
+    <!-- Datos estructurados -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Calculadora de IMC",
+            "operatingSystem": "All",
+            "applicationCategory": "HealthApplication",
+            "description": "Calculadora de IMC online gratis para conocer tu índice de masa corporal con rangos OMS.",
+            "url": "https://imc.vittclas.com/",
+            "inLanguage": "es-GT",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "GTQ"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "vittclas.com",
+              "url": "https://vittclas.com/"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Cómo calcular el IMC?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Divide tu peso en kg entre tu altura en metros al cuadrado. Esta calculadora lo hace automáticamente al ingresar tus datos."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cuál es el rango normal de IMC en adultos?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "El rango normal suele estar entre 18.5 y 24.9 según la OMS."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿El IMC aplica a niños?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "En niños se usan percentiles por edad y sexo. Esta calculadora está pensada para adultos."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué significa un IMC alto?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Puede indicar sobrepeso u obesidad. Es recomendable consultar a un profesional de salud para una evaluación completa."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -114,6 +179,61 @@
         <p id="imc-note" class="note">
           Nota: este resultado es orientativo y no sustituye una evaluación médica.
         </p>
+
+        <section class="content" aria-label="Información sobre el IMC">
+          <h2>Calculadora de IMC online</h2>
+          <p>
+            Con esta herramienta puedes calcular tu índice de masa corporal (IMC)
+            en segundos. Solo ingresa tu peso y tu altura.
+          </p>
+          <p>
+            El IMC es una referencia rápida para evaluar si tu peso está en un
+            rango saludable según la Organización Mundial de la Salud (OMS).
+          </p>
+
+          <h3>Rangos de IMC en adultos (OMS)</h3>
+          <ul>
+            <li><strong>Bajo peso:</strong> menor de 18.5</li>
+            <li><strong>Peso normal:</strong> 18.5 a 24.9</li>
+            <li><strong>Sobrepeso:</strong> 25.0 a 29.9</li>
+            <li><strong>Obesidad grado I:</strong> 30.0 a 34.9</li>
+            <li><strong>Obesidad grado II:</strong> 35.0 a 39.9</li>
+            <li><strong>Obesidad grado III:</strong> 40 o más</li>
+          </ul>
+          <p class="content-note">
+            El IMC no reemplaza una evaluación clínica y no considera masa
+            muscular, edad o distribución de grasa.
+          </p>
+        </section>
+
+        <section class="faq" aria-label="Preguntas frecuentes sobre IMC">
+          <h2>Preguntas frecuentes</h2>
+          <details>
+            <summary>¿Cómo calcular el IMC?</summary>
+            <p>
+              Divide tu peso en kg entre tu altura en metros al cuadrado. Esta
+              calculadora lo hace automáticamente al ingresar tus datos.
+            </p>
+          </details>
+          <details>
+            <summary>¿Cuál es el rango normal de IMC en adultos?</summary>
+            <p>El rango normal suele estar entre 18.5 y 24.9 según la OMS.</p>
+          </details>
+          <details>
+            <summary>¿El IMC aplica a niños?</summary>
+            <p>
+              En niños se usan percentiles por edad y sexo. Esta calculadora está
+              pensada para adultos.
+            </p>
+          </details>
+          <details>
+            <summary>¿Qué significa un IMC alto?</summary>
+            <p>
+              Puede indicar sobrepeso u obesidad. Es recomendable consultar a un
+              profesional de salud para una evaluación completa.
+            </p>
+          </details>
+        </section>
       </section>
     </main>
 

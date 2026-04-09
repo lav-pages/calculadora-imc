@@ -236,6 +236,70 @@ button:hover {
   line-height: 1.4;
 }
 
+.content,
+.faq details {
+  background: var(--surface-2);
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+}
+
+.content {
+  margin-top: 1.1rem;
+  padding: 1rem;
+}
+
+.content h2,
+.faq h2 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.1rem, 2.8vw, 1.35rem);
+  color: var(--c-primary);
+}
+
+.content h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  color: var(--c-text);
+}
+
+.content p {
+  margin: 0.4rem 0;
+}
+
+.content ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.content li {
+  margin-bottom: 0.35rem;
+}
+
+.content-note {
+  margin-top: 0.6rem;
+  color: var(--c-muted);
+  font-size: 0.95rem;
+}
+
+.faq {
+  margin-top: 1rem;
+}
+
+.faq details {
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+.faq p {
+  margin: 0.5rem 0 0;
+  color: var(--c-muted);
+}
+
 @media (max-width: 840px) {
   .grid {
     grid-template-columns: 1fr;
